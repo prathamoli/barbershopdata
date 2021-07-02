@@ -3,18 +3,15 @@ const serverless = require('serverless-http')
 const data = require("../category")
 const app = express()
 const router = express.Router()
+var cors = require('cors')
 
+//adding cors 
+app.use(cors())
 router.get('/',(req, res) =>{
     res.json(data)
 })
 
+
 app.use('/.netlify/functions/api',router)
-app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin","*");
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    next();
-  });
+
  module.exports.handler = serverless(app)
