@@ -7,9 +7,17 @@ publish = "dist"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/api"
   status = 200
-
+  force = true
+  headers = {Access-Control-Allow-Origin = "*"}
+  
+ [[redirects]]
+  from = "/.netlify/functions/api"
+  to = "/.netlify/functions/api"
+  status = 200
+  force = true
+  headers = {Access-Control-Allow-Origin = "*"}
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
