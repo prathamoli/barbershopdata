@@ -1,5 +1,10 @@
-[[headers]]
-  # Define which paths this specific [[headers]] block will cover.
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
+module.exports = (statusCode, body) => {
+    return {  
+        headers: {
+          "Access-Control-Allow-Origin": "*"
+        },
+        statusCode: 200,
+        body: JSON.stringify(body)
+      };
+
+    };
