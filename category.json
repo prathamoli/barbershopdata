@@ -1,19 +1,19 @@
 {
 "category": [
-{
-"name": "Hair",
-"services": [
-{
-"name": "Classic Cut",
-"description": "Relax while your barber achieves your tailored look. If you’re looking for a bald fade or if your hair is currently longer than earlobelength please book from our other options.",
-"price": "30$"
-},
-{
-"name": "Skin Fade",
-"description": "Also known as a bald fade or a zero fade, this service requires a little extra time.Hair is faded from skin or “0” length to your desired length on top",
-"price": "40$"
-}
-]
-}
+          {
+          "name": "Hair",
+          "services": [
+                {
+                "name": "Classic Cut",
+                "description": "Relax while your barber achieves your tailored look. If you’re looking for a bald fade or if your hair is currently longer than earlobelength please book from our other options.",
+                "price": "30$"
+                },
+                {
+                "name": "Skin Fade",
+                "description": "Also known as a bald fade or a zero fade, this service requires a little extra time.Hair is faded from skin or “0” length to your desired length on top",
+                "price": "40$"
+                }
+              ]
+          }
 ]
 }
